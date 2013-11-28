@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="APP">
 <head>
 	<title>social-inspect</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +12,21 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="stylesheet" href="app/styles/app.css">
 </head>
 <body>
 	<div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">video</a></li>
-          <li><a href="#">images</a></li>
-          <li><a href="#">comments</a></li>
+        <ul id="menu" class="nav nav-pills pull-right">
+          <li id="home"><a href="#">home</a></li>
+          <li id="video"><a href="#videos">videos</a></li>
+          <li id="comments"><a href="#comments">comments</a></li>
         </ul>
         <h3 class="text-muted">Social inspector</h3>
       </div>
 	
     <div >
-    	<div ng-view>
+    	<div ng-view >
     		
     	</div>
     </div>  
@@ -48,7 +48,8 @@
 	<script src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-	<script src="app/libs/angular.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js'></script>
 	<script src="app/scripts/app.js"></script>
+
 </body>
 </html>
